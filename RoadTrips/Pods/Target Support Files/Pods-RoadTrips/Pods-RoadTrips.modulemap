@@ -1,0 +1,6 @@
+framework module Pods_RoadTrips {
+  umbrella header "Pods-RoadTrips-umbrella.h"
+
+  export *
+  module * { export * }
+}
