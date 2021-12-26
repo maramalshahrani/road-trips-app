@@ -23,6 +23,7 @@
 		51804A6B27746D8B00975BD2 /* custumTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51804A6A27746D8B00975BD2 /* custumTF.swift */; };
 		51804A6D2774738900975BD2 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51804A6C2774738900975BD2 /* LoginScreen.swift */; };
 		51804A6F277473A500975BD2 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51804A6E277473A500975BD2 /* SignupScreen.swift */; };
+		51F807D8277889700061FC74 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F807D7277889700061FC74 /* Language.swift */; };
 		8539230BCCA141B931424F6C /* Pods_RoadTrips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE722251F99E746338DE04 /* Pods_RoadTrips.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		51804A6A27746D8B00975BD2 /* custumTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custumTF.swift; sourceTree = "<group>"; };
 		51804A6C2774738900975BD2 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		51804A6E277473A500975BD2 /* SignupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
+		51F807D7277889700061FC74 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		631229DC9DE7E2BA0531B11F /* Pods-RoadTrips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadTrips.release.xcconfig"; path = "Target Support Files/Pods-RoadTrips/Pods-RoadTrips.release.xcconfig"; sourceTree = "<group>"; };
 		9CAE722251F99E746338DE04 /* Pods_RoadTrips.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadTrips.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9AEEAC2767DFFA0049646E /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				5128784B2775DE090079160C /* User.swift */,
 				5128784D2775DE450079160C /* Model.swift */,
+				51F807D7277889700061FC74 /* Language.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				51804A692774610800975BD2 /* CustomButtons.swift in Sources */,
 				5136649A274E1D1200424046 /* AppDelegate.swift in Sources */,
 				5128784A2775DCEC0079160C /* PlacesVC.swift in Sources */,
+				51F807D8277889700061FC74 /* Language.swift in Sources */,
 				51804A6F277473A500975BD2 /* SignupScreen.swift in Sources */,
 				51804A6B27746D8B00975BD2 /* custumTF.swift in Sources */,
 				512878522775E9F90079160C /* DetailVC.swift in Sources */,

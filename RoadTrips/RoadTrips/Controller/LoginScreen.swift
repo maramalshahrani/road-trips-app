@@ -10,6 +10,7 @@ import FirebaseAuth
 import FirebaseFirestore
 
 class LoginScreen: UIViewController {
+    
     let db = Firestore.firestore()
     
     let containerView: UIView = {
@@ -21,44 +22,54 @@ class LoginScreen: UIViewController {
         view.clipsToBounds = true
         return view
     }()
+    
     let showImage: UIImageView = {
-       let image = UIImageView()
+        let image = UIImageView()
         image.image = UIImage(named: "pass")
         image.contentMode = .scaleAspectFill
         image.clipsToBounds = true
         return image
     }()
-    let titleLabel:UILabel = {
-      let title = UILabel()
+    
+    let titleLabel: UILabel = {
+        let title = UILabel()
         title.backgroundColor = .clear
-        title.text = NSLocalizedString("welcome back", comment: "")
+        title.text = NSLocalizedString("Welcome back", comment: "")
         title.font = UIFont.systemFont(ofSize: 29, weight: .bold)
         title.textColor = .white
         title.textAlignment = .center
         title.numberOfLines = 0
         return title
     }()
+    
+    
     let emailTextField: UITextField = {
-      let textField = UITextField()
-        textField.setupTF(with: NSAttributedString(string: NSLocalizedString("Email", comment: ""), attributes: [NSAttributedString.Key.foregroundColor:UIColor.white]))
+        let textField = UITextField()
+        textField.setupTF(with: NSAttributedString(string:NSLocalizedString("Email", comment: ""),
+                                                   attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray]))
         return textField
     }()
-    let passwordTextField:UITextField = {
-       let textField = UITextField()
-        textField.setupTF(with: NSAttributedString(string: NSLocalizedString("Password", comment: ""), attributes: [NSAttributedString.Key.foregroundColor:UIColor.white]))
+    let passwordTextField: UITextField = {
+        let textField = UITextField()
+        
+        textField.setupTF(with: NSAttributedString(string: NSLocalizedString("Password", comment: ""),
+                                                   attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray]))
         textField.isSecureTextEntry = true
         return textField
     }()
-    let createAccountButton:UIButton = {
+    
+    let createAccountButton: UIButton = {
         let button = UIButton(type: .system)
         button.setupButton(with: NSLocalizedString("Login", comment: ""))
         return button
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray6
         setupViews()
     }
+    
     private func setupViews() {
         containerView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -121,7 +132,9 @@ class LoginScreen: UIViewController {
         showImage.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -10).isActive  = true
         showImage.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 30).isActive             = true
         showImage.layer.cornerRadius = 40
+        
     }
+    
     @objc private func loginUserTapped() {
         guard let email = emailTextField.text else {return}
         guard let password = passwordTextField.text else {return}
@@ -183,14 +196,14 @@ class LoginScreen: UIViewController {
                     }
                 }
                 
-//                let vc = TabBarVC()
-//                let nav = UINavigationController()
-//                nav.viewControllers = [vc]
-//                nav.modalPresentationStyle = .fullScreen
-//                nav.modalTransitionStyle = .flipHorizontal
-//                self.present(nav, animated: true, completion: nil)
-//
-//
+                let vc = TabBarVC()
+                let nav = UINavigationController()
+                nav.viewControllers = [vc]
+                nav.modalPresentationStyle = .fullScreen
+                nav.modalTransitionStyle = .flipHorizontal
+                self.present(nav, animated: true, completion: nil)
+                
+                
                 
                 //                self.navigationController?.popToRootViewController(animated: true)
                 //                self.navigationController?.pushViewController(TabBarVC(), animated: true)
@@ -213,5 +226,3 @@ extension LoginScreen: UITextFieldDelegate {
         return true
     }
 }
-
-
