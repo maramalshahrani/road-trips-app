@@ -37,7 +37,7 @@ class SignupScreen: UIViewController {
     let emailTextField: UITextField = {
         let textField = UITextField()
         textField.setupTF(with: NSAttributedString(string:NSLocalizedString("Email", comment: ""),
-                                                   attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]))
+                                                   attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray]))
         return textField
     }()
     let passwordTextField: UITextField = {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5126173327799D0100C92E24 /* TouristExplorers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5126173227799D0100C92E24 /* TouristExplorers.swift */; };
+		512617352779CD8700C92E24 /* SnapCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512617342779CD8700C92E24 /* SnapCode.swift */; };
+		512617372779D44F00C92E24 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512617362779D44F00C92E24 /* Favorite.swift */; };
 		5128784A2775DCEC0079160C /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512878492775DCEC0079160C /* PlacesVC.swift */; };
 		5128784C2775DE090079160C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128784B2775DE090079160C /* User.swift */; };
 		5128784E2775DE450079160C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128784D2775DE450079160C /* Model.swift */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		3DD7C668B275511AC7FAD67F /* Pods-RoadTrips.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadTrips.debug.xcconfig"; path = "Target Support Files/Pods-RoadTrips/Pods-RoadTrips.debug.xcconfig"; sourceTree = "<group>"; };
+		5126173227799D0100C92E24 /* TouristExplorers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristExplorers.swift; sourceTree = "<group>"; };
+		512617342779CD8700C92E24 /* SnapCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCode.swift; sourceTree = "<group>"; };
+		512617362779D44F00C92E24 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		512878492775DCEC0079160C /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
 		5128784B2775DE090079160C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5128784D2775DE450079160C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -124,6 +130,9 @@
 				51804A6E277473A500975BD2 /* SignupScreen.swift */,
 				512878492775DCEC0079160C /* PlacesVC.swift */,
 				512878512775E9F90079160C /* DetailVC.swift */,
+				5126173227799D0100C92E24 /* TouristExplorers.swift */,
+				512617362779D44F00C92E24 /* Favorite.swift */,
+				512617342779CD8700C92E24 /* SnapCode.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,14 +280,17 @@
 				51F807D8277889700061FC74 /* Language.swift in Sources */,
 				51804A6F277473A500975BD2 /* SignupScreen.swift in Sources */,
 				51804A6B27746D8B00975BD2 /* custumTF.swift in Sources */,
+				512617352779CD8700C92E24 /* SnapCode.swift in Sources */,
 				512878522775E9F90079160C /* DetailVC.swift in Sources */,
 				5128784E2775DE450079160C /* Model.swift in Sources */,
 				5128784C2775DE090079160C /* User.swift in Sources */,
 				512878542775EA850079160C /* TabBarVC.swift in Sources */,
 				51804A672773842E00975BD2 /* GreatingVC.swift in Sources */,
+				512617372779D44F00C92E24 /* Favorite.swift in Sources */,
 				5136649C274E1D1200424046 /* SceneDelegate.swift in Sources */,
 				512878502775E7730079160C /* CollectionCell.swift in Sources */,
 				51804A6D2774738900975BD2 /* LoginScreen.swift in Sources */,
+				5126173327799D0100C92E24 /* TouristExplorers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,7 @@ class TabBarVC: UITabBarController {
         viewControllers = [
             barItem(tabBarTitle:NSLocalizedString("places", comment: "") , tabBarImage: UIImage(systemName: "paperplane.fill")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: PlacesVC()),
             
-//            barItem(tabBarTitle:NSLocalizedString("Explorers", comment: "") , tabBarImage: UIImage(systemName: "person.3.fill")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: TouristExplorers()),
+            barItem(tabBarTitle:NSLocalizedString("Explorers", comment: "") , tabBarImage: UIImage(systemName: "person.3.fill")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: TouristExplorers()),
 //
 //            barItem(tabBarTitle: NSLocalizedString("weather", comment: "") , tabBarImage: UIImage(systemName: "cloud.fill")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: ViewController()),
 //
