@@ -39,7 +39,7 @@ enum Language: String {
     static var current: Language {
         get {
             if let languageCode = UserDefaults.standard.string(forKey: appleLanguagesKey),
-                let language = Language(rawValue: languageCode) {
+               let language = Language(rawValue: languageCode) {
                 return language
                 
             } else {
@@ -57,9 +57,9 @@ enum Language: String {
                     return Language.english
                     
                 }
-                    
+                
             }
-
+            
         }
         
         set {
@@ -68,7 +68,7 @@ enum Language: String {
             if newValue == .default {
                 UserDefaults.standard.removeObject(forKey: appleLanguagesKey)
                 UserDefaults.standard.synchronize()
-
+                
             } else {
                 // change language in the app
                 // the language will be changed after restart
@@ -82,11 +82,11 @@ enum Language: String {
             if newValue == .arabic {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 UIImageView.appearance().semanticContentAttribute = .forceRightToLeft
-
+                
             }else if newValue == .english{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
                 UIImageView.appearance().semanticContentAttribute = .forceLeftToRight
-
+                
             }
             
             //initialize the app from scratch
@@ -94,7 +94,7 @@ enum Language: String {
             //so it seems like the is restarted
         }
     }
-
+    
 }
 
 extension String {

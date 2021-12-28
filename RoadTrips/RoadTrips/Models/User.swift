@@ -15,8 +15,6 @@ struct User: Codable {
     private(set) var email: String
     private(set) var avatar: String?
     
-
-
 }
 
 

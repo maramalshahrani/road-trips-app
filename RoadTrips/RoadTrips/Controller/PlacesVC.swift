@@ -73,7 +73,7 @@ class PlacesVC: UIViewController {
         
         collectionView                      = UICollectionView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height), collectionViewLayout: layoutQustom)
         
-
+        
         collectionView.autoresizingMask     = [.flexibleWidth, .flexibleHeight]
         collectionView.delegate             = self
         collectionView.dataSource           = self
@@ -116,11 +116,11 @@ extension PlacesVC: UICollectionViewDelegate , UICollectionViewDataSource , CHTC
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = DetailVC()
         if filterVaction.count != 0 {
-          
+            
             vc.curentModel = filterVaction[indexPath.row]
         }else{
             vc.curentModel = allVaction[indexPath.row]
-          
+            
         }
         
         self.navigationController?.pushViewController(vc, animated: true)

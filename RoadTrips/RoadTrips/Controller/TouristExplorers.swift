@@ -60,13 +60,12 @@ class TouristExplorers: UIViewController , UITableViewDataSource, UITableViewDel
         cell.imagecell.layer.cornerRadius = 40
         return cell
     }
-    
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = Contacts[indexPath.row]
         let newVC = SnapCode()
         newVC.snapImage.image = UIImage(named: data.snapCode)
         newVC.labelName.text = "Scan:SnapCode"
+        newVC.labelCity.text = "From: SaudiArabia🇸🇦"
         present(newVC, animated: true, completion: nil)
     }
     var selectedIndex = -1
@@ -104,7 +103,6 @@ class Cell: UITableViewCell {
              
              namecell.heightAnchor.constraint(equalToConstant: 80),
              namecell.trailingAnchor.constraint(equalTo: trailingAnchor , constant: 100)])
-        
     }
     required init?(coder: NSCoder) {
         super.init(coder: coder)

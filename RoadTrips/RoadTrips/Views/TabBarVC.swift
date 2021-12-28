@@ -17,13 +17,13 @@ class TabBarVC: UITabBarController {
             barItem(tabBarTitle:NSLocalizedString("places", comment: "") , tabBarImage: UIImage(systemName: "paperplane.fill")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: PlacesVC()),
             
             barItem(tabBarTitle:NSLocalizedString("Explorers", comment: "") , tabBarImage: UIImage(systemName: "person.3.fill")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: TouristExplorers()),
-//
-//            barItem(tabBarTitle: NSLocalizedString("weather", comment: "") , tabBarImage: UIImage(systemName: "cloud.fill")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: ViewController()),
-//
-//            barItem(tabBarTitle:NSLocalizedString("maps", comment: "") , tabBarImage: UIImage(systemName: "mappin.and.ellipse")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: Maps()),
-//
-//            barItem(tabBarTitle:NSLocalizedString("Settings", comment: "") , tabBarImage: UIImage(systemName: "personalhotspot.circle")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: ProfileVC())
-//
+            
+            barItem(tabBarTitle: NSLocalizedString("weather", comment: "") , tabBarImage: UIImage(systemName: "cloud.fill")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: WeatherVC()),
+            
+            //            barItem(tabBarTitle:NSLocalizedString("maps", comment: "") , tabBarImage: UIImage(systemName: "mappin.and.ellipse")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: Maps()),
+            //
+            //            barItem(tabBarTitle:NSLocalizedString("Settings", comment: "") , tabBarImage: UIImage(systemName: "personalhotspot.circle")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: ProfileVC())
+            //
             
         ]
         
@@ -44,4 +44,5 @@ class TabBarVC: UITabBarController {
     }
     
 }
+
 

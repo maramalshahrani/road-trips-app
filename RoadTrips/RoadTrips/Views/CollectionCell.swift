@@ -11,7 +11,7 @@ class CityCell: UICollectionViewCell {
     static let ID = "CellID"
     
     private var tripImage: UIImageView = {
-       let image = UIImageView()
+        let image = UIImageView()
         
         image.contentMode = .scaleToFill
         image.clipsToBounds = true
@@ -37,7 +37,7 @@ class CityCell: UICollectionViewCell {
     func setCell(card: Vaction){
         tripImage.sd_setImage(with: URL.init(string: card.image), completed: nil)
         if Language.current.rawValue == "ar" {
-        tripTitle.text          = card.title_ar
+            tripTitle.text          = card.title_ar
         }else{
             tripTitle.text          = card.title
         }

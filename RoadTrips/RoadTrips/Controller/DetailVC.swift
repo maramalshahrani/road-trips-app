@@ -223,7 +223,7 @@ class DetailVC: UIViewController , FSPagerViewDataSource{
                 }
             }
         }
-       
+        
         
         // get images
         ref.child("Places").child(curentModel.id).child("images").observeSingleEvent(of: .value) { snapshot in
