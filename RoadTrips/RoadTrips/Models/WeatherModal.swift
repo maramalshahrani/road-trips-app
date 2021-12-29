@@ -22,7 +22,6 @@ struct Weather: Codable {
     let id          : Int
 }
 
-
 struct Model {
     let conditionId : Int
     let cityName    : String

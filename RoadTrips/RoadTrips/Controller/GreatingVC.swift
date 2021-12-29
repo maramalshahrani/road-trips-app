@@ -65,7 +65,7 @@ class GreatingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemGray6
+        view.backgroundColor = UIColor(#colorLiteral(red: 0.7731178403, green: 0.7686780691, blue: 0.789144218, alpha: 1))
         
         setupViews()
     }

@@ -61,8 +61,5 @@ struct Manager {
             return nil
         }
     }
-    
-    
-    
 }
 

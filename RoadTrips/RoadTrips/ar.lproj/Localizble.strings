@@ -1,0 +1,44 @@
+/* 
+  Localizble.strings
+  RoadTrips
+
+  Created by Maram Al shahrani on 25/05/1443 AH.
+  
+*/
+
+"welecome" = "مرحبا" ;
+"Login" = "تسجيل دخول" ;
+"Password" = "الرقم السري" ;
+"Email" = "البريد الالكتروني" ;
+"Welcome back" = "مرحبا بعودتك" ;
+"Oops!" = "حدث خطا!" ;
+"please make sure email and password are not empty." = "لطفاً تأكد من الرقم السري والبريد الالكتروني بأنه غير فارغ " ;
+"OK" = "حسناً" ;
+"you entered a wrong password" = "الرقم السري خاطئ" ;
+"are sure you typed the email correctly?" = "هل انت متأكد من البريد الالكتروني ؟" ;
+"Your password is weak, please make sure it's strong." = "الرقم السري ضعيف،يرجى التأكد من انها قويه" ;
+"Best places in world." = "أفضل الآماكن في العالم" ;
+"Sign up" = "تسجيل جديد" ;
+"Log in" = "تسجيل دخول" ;
+"Creating an account to accsses to App." = "إنشاء حساب للدخول للتطبيق" ;
+"Name" = "الإسم" ;
+"Create account" = "قم بإنشاء حساب " ;
+"email Already in use" = "البريد الالكتروني مستخدم" ;
+"maps" = "الخريطه" ;
+"weather" = "الطقس" ;
+"Explorers" = "مكتشفون" ;
+"Settings" = "الاعدادات" ;
+"places" = "الأماكن" ;
+"Applicaiton language" = "لغة التطبيق" ;
+"Applicaiton mode" = "مظهر التطبيق" ;
+"Favoret Places" = "الآماكن المفضله" ;
+"Contact a travel representative" = "تواصل مع مستشار السفر " ;
+"Go To Almosafer Application" = "إذهب للتطبيق المسافر" ;
+"Travel Explorers🔎" = " 🔎أشهر السياح" ;
+"Cities" = "المدن" ;
+"Welcome" = "مرحباً " ;
+"Log Out" = "تسجيل خروج" ;
+"Datails" = "التفاصيل" ;
+"Search for a city" = "ابحث عن المدينه" ;
+"Countries Information" = "معلومات المدن";
+

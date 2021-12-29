@@ -1,0 +1,45 @@
+
+/*
+  Localizble.strings
+  RoadTrips
+
+  Created by Maram Al shahrani on 25/05/1443 AH.
+  
+*/
+
+"welecome" = "welecome";
+"Login" = "Login" ;
+"Password" = "Password" ;
+"Email" = "Email" ;
+"Welcome back" = "Welcome back" ;
+"Oops!" = "Oops!" ;
+"please make sure email and password are not empty." = "please make sure email and password are not empty." ;
+"OK" = "OK" ;
+"you entered a wrong password" = "you entered a wrong password" ;
+"are sure you typed the email correctly?" = "are sure you typed the email correctly?" ;
+"Your password is weak, please make sure it's strong." = "Your password is weak, please make sure it's strong." ;
+"Best places in world." = "Best places in world." ;
+"Sign up" = "Sign up" ;
+"Log in" = "Log in" ;
+"Creating an account to accsses to App." = "Creating an account to accsses to App." ;
+"Name" = "Name" ;
+"Create account" = "Create account" ;
+"email Already in use" = "email Already in use" ;
+"maps" = "maps" ;
+"weather" = "weather" ;
+"Explorers" = "Explorers" ;
+"Settings" = "Settings" ;
+"places" = "places" ;
+"Applicaiton language" = "Applicaiton language" ;
+"Applicaiton mode" = "Applicaiton mode" ;
+"Favoret Places" = "Favoret Places" ;
+"Contact a travel representative" = "Contact a travel representative" ;
+"Go To Almosafer Application" = "Go To Almosafer Application" ;
+"Travel Explorers🔎" = "Travel Explorers🔎" ;
+"Cities" = "Cities" ;
+"Welcome" = "Welcome" ;
+"Log Out" = "Log Out" ;
+"Datails" = "Datails" ;
+"Search for a city" = "Search for a city" ;
+"Countries Information" = "Countries Information";
+
