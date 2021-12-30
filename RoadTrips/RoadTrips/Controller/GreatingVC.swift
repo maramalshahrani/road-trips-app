@@ -141,8 +141,6 @@ class GreatingVC: UIViewController {
         greatImage.topAnchor.constraint(equalTo: container.topAnchor, constant: 40).isActive             = true
         greatImage.layer.cornerRadius = 40
         
-        
-        
     }
     
     @objc private func loginButtonTapped() {
@@ -154,5 +152,7 @@ class GreatingVC: UIViewController {
     private func isUserSignedIn() -> Bool {
         return Auth.auth().currentUser != nil
     }
+    
 }
+
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51181875277DD9E90072DB56 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51181874277DD9E90072DB56 /* ProfileVC.swift */; };
+		51181877277DDBCD0072DB56 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51181876277DDBCD0072DB56 /* ProfileCell.swift */; };
+		51181879277DDC170072DB56 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51181878277DDC170072DB56 /* EditProfileVC.swift */; };
+		5118187B277DDC7D0072DB56 /* CountryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118187A277DDC7D0072DB56 /* CountryInfo.swift */; };
 		5126173327799D0100C92E24 /* TouristExplorers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5126173227799D0100C92E24 /* TouristExplorers.swift */; };
 		512617352779CD8700C92E24 /* SnapCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512617342779CD8700C92E24 /* SnapCode.swift */; };
 		512617372779D44F00C92E24 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512617362779D44F00C92E24 /* Favorite.swift */; };
@@ -39,6 +43,10 @@
 
 /* Begin PBXFileReference section */
 		3DD7C668B275511AC7FAD67F /* Pods-RoadTrips.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadTrips.debug.xcconfig"; path = "Target Support Files/Pods-RoadTrips/Pods-RoadTrips.debug.xcconfig"; sourceTree = "<group>"; };
+		51181874277DD9E90072DB56 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		51181876277DDBCD0072DB56 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		51181878277DDC170072DB56 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		5118187A277DDC7D0072DB56 /* CountryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfo.swift; sourceTree = "<group>"; };
 		5126173227799D0100C92E24 /* TouristExplorers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristExplorers.swift; sourceTree = "<group>"; };
 		512617342779CD8700C92E24 /* SnapCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCode.swift; sourceTree = "<group>"; };
 		512617362779D44F00C92E24 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
@@ -134,6 +142,10 @@
 				513664A4274E1D1400424046 /* LaunchScreen.storyboard */,
 				513664A7274E1D1400424046 /* Info.plist */,
 				51928CF1277C50050091476D /* Localizble.strings */,
+				51181874277DD9E90072DB56 /* ProfileVC.swift */,
+				51181876277DDBCD0072DB56 /* ProfileCell.swift */,
+				51181878277DDC170072DB56 /* EditProfileVC.swift */,
+				5118187A277DDC7D0072DB56 /* CountryInfo.swift */,
 			);
 			path = RoadTrips;
 			sourceTree = "<group>";
@@ -309,12 +321,16 @@
 				51804A6B27746D8B00975BD2 /* custumTF.swift in Sources */,
 				512617352779CD8700C92E24 /* SnapCode.swift in Sources */,
 				512878522775E9F90079160C /* DetailVC.swift in Sources */,
+				51181879277DDC170072DB56 /* EditProfileVC.swift in Sources */,
+				51181875277DD9E90072DB56 /* ProfileVC.swift in Sources */,
+				5118187B277DDC7D0072DB56 /* CountryInfo.swift in Sources */,
 				51364F11277B232B006958C4 /* Colors.swift in Sources */,
 				5128784E2775DE450079160C /* Model.swift in Sources */,
 				5128784C2775DE090079160C /* User.swift in Sources */,
 				512878542775EA850079160C /* TabBarVC.swift in Sources */,
 				51804A672773842E00975BD2 /* GreatingVC.swift in Sources */,
 				512617372779D44F00C92E24 /* Favorite.swift in Sources */,
+				51181877277DDBCD0072DB56 /* ProfileCell.swift in Sources */,
 				5136649C274E1D1200424046 /* SceneDelegate.swift in Sources */,
 				512878502775E7730079160C /* CollectionCell.swift in Sources */,
 				51804A6D2774738900975BD2 /* LoginScreen.swift in Sources */,
