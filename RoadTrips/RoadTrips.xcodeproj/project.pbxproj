@@ -142,9 +142,6 @@
 				513664A4274E1D1400424046 /* LaunchScreen.storyboard */,
 				513664A7274E1D1400424046 /* Info.plist */,
 				51928CF1277C50050091476D /* Localizble.strings */,
-				51181874277DD9E90072DB56 /* ProfileVC.swift */,
-				51181876277DDBCD0072DB56 /* ProfileCell.swift */,
-				51181878277DDC170072DB56 /* EditProfileVC.swift */,
 				5118187A277DDC7D0072DB56 /* CountryInfo.swift */,
 			);
 			path = RoadTrips;
@@ -164,6 +161,8 @@
 				51364F0E277AF8AB006958C4 /* WeatherVC.swift */,
 				51928CE9277C44160091476D /* MapVC.swift */,
 				51928CEB277C4EAB0091476D /* LocationSearchTable.swift */,
+				51181874277DD9E90072DB56 /* ProfileVC.swift */,
+				51181878277DDC170072DB56 /* EditProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +176,7 @@
 				5128784F2775E7730079160C /* CollectionCell.swift */,
 				512878532775EA850079160C /* TabBarVC.swift */,
 				51364F0C277AF634006958C4 /* ManageWeather.swift */,
+				51181876277DDBCD0072DB56 /* ProfileCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
