@@ -34,6 +34,8 @@
 		51804A6B27746D8B00975BD2 /* custumTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51804A6A27746D8B00975BD2 /* custumTF.swift */; };
 		51804A6D2774738900975BD2 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51804A6C2774738900975BD2 /* LoginScreen.swift */; };
 		51804A6F277473A500975BD2 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51804A6E277473A500975BD2 /* SignupScreen.swift */; };
+		5181B3BB2780CA4D00157C24 /* CountryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5181B3BA2780CA4D00157C24 /* CountryAPI.swift */; };
+		5181B3BD2780CA8500157C24 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5181B3BC2780CA8500157C24 /* CountryModel.swift */; };
 		51928CEA277C44160091476D /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51928CE9277C44160091476D /* MapVC.swift */; };
 		51928CEC277C4EAB0091476D /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51928CEB277C4EAB0091476D /* LocationSearchTable.swift */; };
 		51928CEF277C50050091476D /* Localizble.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51928CF1277C50050091476D /* Localizble.strings */; };
@@ -72,6 +74,8 @@
 		51804A6A27746D8B00975BD2 /* custumTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custumTF.swift; sourceTree = "<group>"; };
 		51804A6C2774738900975BD2 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		51804A6E277473A500975BD2 /* SignupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
+		5181B3BA2780CA4D00157C24 /* CountryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAPI.swift; sourceTree = "<group>"; };
+		5181B3BC2780CA8500157C24 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		51928CE9277C44160091476D /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		51928CEB277C4EAB0091476D /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		51928CF0277C50050091476D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizble.strings; sourceTree = "<group>"; };
@@ -142,7 +146,6 @@
 				513664A4274E1D1400424046 /* LaunchScreen.storyboard */,
 				513664A7274E1D1400424046 /* Info.plist */,
 				51928CF1277C50050091476D /* Localizble.strings */,
-				5118187A277DDC7D0072DB56 /* CountryInfo.swift */,
 			);
 			path = RoadTrips;
 			sourceTree = "<group>";
@@ -163,6 +166,8 @@
 				51928CEB277C4EAB0091476D /* LocationSearchTable.swift */,
 				51181874277DD9E90072DB56 /* ProfileVC.swift */,
 				51181878277DDC170072DB56 /* EditProfileVC.swift */,
+				5118187A277DDC7D0072DB56 /* CountryInfo.swift */,
+				5181B3BA2780CA4D00157C24 /* CountryAPI.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				5128784D2775DE450079160C /* Model.swift */,
 				51F807D7277889700061FC74 /* Language.swift */,
 				51364F0A277AE657006958C4 /* WeatherModal.swift */,
+				5181B3BC2780CA8500157C24 /* CountryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 				512617352779CD8700C92E24 /* SnapCode.swift in Sources */,
 				512878522775E9F90079160C /* DetailVC.swift in Sources */,
 				51181879277DDC170072DB56 /* EditProfileVC.swift in Sources */,
+				5181B3BB2780CA4D00157C24 /* CountryAPI.swift in Sources */,
 				51181875277DD9E90072DB56 /* ProfileVC.swift in Sources */,
 				5118187B277DDC7D0072DB56 /* CountryInfo.swift in Sources */,
 				51364F11277B232B006958C4 /* Colors.swift in Sources */,
@@ -329,6 +336,7 @@
 				5128784C2775DE090079160C /* User.swift in Sources */,
 				512878542775EA850079160C /* TabBarVC.swift in Sources */,
 				51804A672773842E00975BD2 /* GreatingVC.swift in Sources */,
+				5181B3BD2780CA8500157C24 /* CountryModel.swift in Sources */,
 				512617372779D44F00C92E24 /* Favorite.swift in Sources */,
 				51181877277DDBCD0072DB56 /* ProfileCell.swift in Sources */,
 				5136649C274E1D1200424046 /* SceneDelegate.swift in Sources */,
