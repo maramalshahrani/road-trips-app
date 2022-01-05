@@ -14,6 +14,17 @@ struct Vaction {
     var desc    : String
     var lat: String
     var lang: String
+    var activeCovid: String
+    var rateCount: String
+    var rate: String
     var title_ar   : String
     var desc_ar    : String
+}
+
+struct VeidoItem {
+
+    var id   : String
+    var url    : String
+    var imageUrl    : String
+    
 }

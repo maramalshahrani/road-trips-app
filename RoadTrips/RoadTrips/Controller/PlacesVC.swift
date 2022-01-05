@@ -8,14 +8,15 @@
 import UIKit
 import FirebaseDatabase
 import CHTCollectionViewWaterfallLayout
-
 class PlacesVC: UIViewController {
     
-    var collectionView: UICollectionView!
     
+    var collectionView: UICollectionView!
+    var adsImages: [String] = []
+
     var filterVaction: [Vaction] = []
     var allVaction: [Vaction] = []
-    let search = UISearchController ()
+    let search = UISearchController()
     
     public func setupSearchBar() {
         
@@ -27,6 +28,7 @@ class PlacesVC: UIViewController {
         search.searchBar.placeholder = NSLocalizedString("Search for a city", comment: "")
         search.hidesNavigationBarDuringPresentation = false
         definesPresentationContext = true
+        
         navigationItem.searchController = search
         navigationItem.hidesSearchBarWhenScrolling = true
         search.searchBar.delegate = self
@@ -34,13 +36,68 @@ class PlacesVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         configureCollectionView()
         self.title = NSLocalizedString("Cities", comment: "")
         view.backgroundColor = .systemGray6
         collectionView.backgroundColor = .systemGray6
         setupSearchBar()
-        getData()
         
+        //
+        self.adsImages.removeAll()
+        Database.database().reference().child("Ads").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get Category value
+            let value = (snapshot.value as? NSDictionary)?.allValues
+        if value != nil {
+        for curentAds in value!{
+            let value = (curentAds as? NSDictionary)
+                let image = value?["image"] as? String ?? ""
+            self.adsImages.append(image)
+            
+            }
+        }
+
+        })
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, heightForHeaderIn section: Int) -> CGFloat {
+        return 230
+    }
+    
+    func collectionView(
+     _ collectionView: UICollectionView,
+     viewForSupplementaryElementOfKind kind: String,
+     at indexPath: IndexPath
+   ) -> UICollectionReusableView {
+     switch kind {
+     // 1
+     case UICollectionView.elementKindSectionHeader:
+       // 2
+       let headerView = collectionView.dequeueReusableSupplementaryView(
+         ofKind: kind,
+         withReuseIdentifier: "\(adsSliderCVCell.self)",
+         for: indexPath)
+
+       // 3
+       guard let typedHeaderView = headerView as? adsSliderCVCell
+       else { return headerView }
+
+       // 4
+
+         typedHeaderView.imagesArray = self.adsImages
+         typedHeaderView.reloadContent()
+       return typedHeaderView
+     default:
+       // 5
+       assert(false, "Invalid element type")
+     }
+   }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.allVaction.removeAll()
+        getData()
+
     }
     func getData(){
         let ref = Database.database().reference()
@@ -59,13 +116,18 @@ class PlacesVC: UIViewController {
                     let lang = value?["lang"] as? String ?? ""
                     let title_ar = value?["title_ar"] as? String ?? ""
                     let desc_ar = value?["desc_ar"] as? String ?? ""
-                    self.allVaction.append(Vaction.init(id: id, image: image, title: title, desc: desc, lat: lat, lang: lang , title_ar: title_ar , desc_ar: desc_ar))
+                    let activeCovid = value?["activeCovid"] as? String ?? ""
+                    let rate = value?["rate"] as? String ?? ""
+                    let rateCount = value?["rateCount"] as? String ?? ""
+                    
+                    self.allVaction.append(Vaction.init(id: id, image: image, title: title, desc: desc, lat: lat, lang: lang , activeCovid: activeCovid, rateCount: rateCount , rate: rate, title_ar: title_ar , desc_ar: desc_ar))
                 }
             }
             self.collectionView.reloadData()
             
         }
     }
+    
     private func configureCollectionView(){
         let layoutQustom = CHTCollectionViewWaterfallLayout()
         layoutQustom.itemRenderDirection = .leftToRight
@@ -73,15 +135,21 @@ class PlacesVC: UIViewController {
         
         collectionView                      = UICollectionView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height), collectionViewLayout: layoutQustom)
         
-        
+
         collectionView.autoresizingMask     = [.flexibleWidth, .flexibleHeight]
         collectionView.delegate             = self
         collectionView.dataSource           = self
         collectionView.showsVerticalScrollIndicator = false
         collectionView.register(CityCell.self, forCellWithReuseIdentifier: CityCell.ID)
+        collectionView.register(adsSliderCVCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: adsSliderCVCell.identifier)
+
         view.addSubview(collectionView)
     }
+    
+    
 }
+
+
 
 extension PlacesVC: UICollectionViewDelegate , UICollectionViewDataSource , CHTCollectionViewDelegateWaterfallLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -116,11 +184,11 @@ extension PlacesVC: UICollectionViewDelegate , UICollectionViewDataSource , CHTC
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = DetailVC()
         if filterVaction.count != 0 {
-            
+          
             vc.curentModel = filterVaction[indexPath.row]
         }else{
             vc.curentModel = allVaction[indexPath.row]
-            
+          
         }
         
         self.navigationController?.pushViewController(vc, animated: true)
@@ -134,7 +202,6 @@ extension PlacesVC: UICollectionViewDelegate , UICollectionViewDataSource , CHTC
     }
     
 }
-
 extension PlacesVC: UISearchResultsUpdating, UISearchBarDelegate {
     
     func updateSearchResults(for searchController: UISearchController) {
@@ -151,6 +218,7 @@ extension PlacesVC: UISearchResultsUpdating, UISearchBarDelegate {
     
     private func findResultsBasedOnSearch(with text: String)  {
         filterVaction.removeAll()
+        self.collectionView.reloadData()
         if !text.isEmpty {
             filterVaction = allVaction.filter{$0.title.lowercased().contains(text.lowercased()) }
             collectionView.reloadData()

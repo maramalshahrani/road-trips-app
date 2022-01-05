@@ -11,6 +11,13 @@
 		51181877277DDBCD0072DB56 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51181876277DDBCD0072DB56 /* ProfileCell.swift */; };
 		51181879277DDC170072DB56 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51181878277DDC170072DB56 /* EditProfileVC.swift */; };
 		5118187B277DDC7D0072DB56 /* CountryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118187A277DDC7D0072DB56 /* CountryInfo.swift */; };
+		512610FD27845E0D00E8BDF7 /* TravelApplicationSuggestionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512610FC27845E0D00E8BDF7 /* TravelApplicationSuggestionsVC.swift */; };
+		512610FF27845F9100E8BDF7 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512610FE27845F9100E8BDF7 /* VideoVC.swift */; };
+		512611012784652C00E8BDF7 /* adsSliderCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512611002784652C00E8BDF7 /* adsSliderCVCell.swift */; };
+		5126110427846C1000E8BDF7 /* CWRateKitAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5126110327846C1000E8BDF7 /* CWRateKitAnimationType.swift */; };
+		5126110627846C5400E8BDF7 /* CWRateKitHapticMoments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5126110527846C5400E8BDF7 /* CWRateKitHapticMoments.swift */; };
+		5126110827846C8000E8BDF7 /* CWRateKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5126110727846C8000E8BDF7 /* CWRateKitViewController.swift */; };
+		5126110A27846CC000E8BDF7 /* CWRateKitViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5126110927846CC000E8BDF7 /* CWRateKitViewControllerDelegate.swift */; };
 		5126173327799D0100C92E24 /* TouristExplorers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5126173227799D0100C92E24 /* TouristExplorers.swift */; };
 		512617352779CD8700C92E24 /* SnapCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512617342779CD8700C92E24 /* SnapCode.swift */; };
 		512617372779D44F00C92E24 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512617362779D44F00C92E24 /* Favorite.swift */; };
@@ -49,6 +56,13 @@
 		51181876277DDBCD0072DB56 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		51181878277DDC170072DB56 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		5118187A277DDC7D0072DB56 /* CountryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfo.swift; sourceTree = "<group>"; };
+		512610FC27845E0D00E8BDF7 /* TravelApplicationSuggestionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelApplicationSuggestionsVC.swift; sourceTree = "<group>"; };
+		512610FE27845F9100E8BDF7 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		512611002784652C00E8BDF7 /* adsSliderCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adsSliderCVCell.swift; sourceTree = "<group>"; };
+		5126110327846C1000E8BDF7 /* CWRateKitAnimationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWRateKitAnimationType.swift; sourceTree = "<group>"; };
+		5126110527846C5400E8BDF7 /* CWRateKitHapticMoments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWRateKitHapticMoments.swift; sourceTree = "<group>"; };
+		5126110727846C8000E8BDF7 /* CWRateKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWRateKitViewController.swift; sourceTree = "<group>"; };
+		5126110927846CC000E8BDF7 /* CWRateKitViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWRateKitViewControllerDelegate.swift; sourceTree = "<group>"; };
 		5126173227799D0100C92E24 /* TouristExplorers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristExplorers.swift; sourceTree = "<group>"; };
 		512617342779CD8700C92E24 /* SnapCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCode.swift; sourceTree = "<group>"; };
 		512617362779D44F00C92E24 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
@@ -115,6 +129,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5126110227846BAC00E8BDF7 /* RateView */ = {
+			isa = PBXGroup;
+			children = (
+				5126110327846C1000E8BDF7 /* CWRateKitAnimationType.swift */,
+				5126110527846C5400E8BDF7 /* CWRateKitHapticMoments.swift */,
+				5126110727846C8000E8BDF7 /* CWRateKitViewController.swift */,
+				5126110927846CC000E8BDF7 /* CWRateKitViewControllerDelegate.swift */,
+			);
+			path = RateView;
+			sourceTree = "<group>";
+		};
 		5136648D274E1D1200424046 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +171,9 @@
 				513664A4274E1D1400424046 /* LaunchScreen.storyboard */,
 				513664A7274E1D1400424046 /* Info.plist */,
 				51928CF1277C50050091476D /* Localizble.strings */,
+				512610FC27845E0D00E8BDF7 /* TravelApplicationSuggestionsVC.swift */,
+				512610FE27845F9100E8BDF7 /* VideoVC.swift */,
+				512611002784652C00E8BDF7 /* adsSliderCVCell.swift */,
 			);
 			path = RoadTrips;
 			sourceTree = "<group>";
@@ -175,6 +203,7 @@
 		51920887274F620B001F5277 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5126110227846BAC00E8BDF7 /* RateView */,
 				51804A682774610800975BD2 /* CustomButtons.swift */,
 				51804A6A27746D8B00975BD2 /* custumTF.swift */,
 				51364F10277B232B006958C4 /* Colors.swift */,
@@ -318,19 +347,25 @@
 				51364F0B277AE657006958C4 /* WeatherModal.swift in Sources */,
 				51804A692774610800975BD2 /* CustomButtons.swift in Sources */,
 				5136649A274E1D1200424046 /* AppDelegate.swift in Sources */,
+				512610FD27845E0D00E8BDF7 /* TravelApplicationSuggestionsVC.swift in Sources */,
+				5126110427846C1000E8BDF7 /* CWRateKitAnimationType.swift in Sources */,
+				512611012784652C00E8BDF7 /* adsSliderCVCell.swift in Sources */,
 				5128784A2775DCEC0079160C /* PlacesVC.swift in Sources */,
 				51F807D8277889700061FC74 /* Language.swift in Sources */,
 				51928CEA277C44160091476D /* MapVC.swift in Sources */,
 				51804A6F277473A500975BD2 /* SignupScreen.swift in Sources */,
 				51364F0D277AF634006958C4 /* ManageWeather.swift in Sources */,
+				5126110627846C5400E8BDF7 /* CWRateKitHapticMoments.swift in Sources */,
 				51928CEC277C4EAB0091476D /* LocationSearchTable.swift in Sources */,
 				51804A6B27746D8B00975BD2 /* custumTF.swift in Sources */,
 				512617352779CD8700C92E24 /* SnapCode.swift in Sources */,
 				512878522775E9F90079160C /* DetailVC.swift in Sources */,
+				5126110A27846CC000E8BDF7 /* CWRateKitViewControllerDelegate.swift in Sources */,
 				51181879277DDC170072DB56 /* EditProfileVC.swift in Sources */,
 				5181B3BB2780CA4D00157C24 /* CountryAPI.swift in Sources */,
 				51181875277DD9E90072DB56 /* ProfileVC.swift in Sources */,
 				5118187B277DDC7D0072DB56 /* CountryInfo.swift in Sources */,
+				5126110827846C8000E8BDF7 /* CWRateKitViewController.swift in Sources */,
 				51364F11277B232B006958C4 /* Colors.swift in Sources */,
 				5128784E2775DE450079160C /* Model.swift in Sources */,
 				5128784C2775DE090079160C /* User.swift in Sources */,
@@ -338,6 +373,7 @@
 				51804A672773842E00975BD2 /* GreatingVC.swift in Sources */,
 				5181B3BD2780CA8500157C24 /* CountryModel.swift in Sources */,
 				512617372779D44F00C92E24 /* Favorite.swift in Sources */,
+				512610FF27845F9100E8BDF7 /* VideoVC.swift in Sources */,
 				51181877277DDBCD0072DB56 /* ProfileCell.swift in Sources */,
 				5136649C274E1D1200424046 /* SceneDelegate.swift in Sources */,
 				512878502775E7730079160C /* CollectionCell.swift in Sources */,

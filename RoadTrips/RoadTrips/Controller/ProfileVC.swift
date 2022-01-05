@@ -32,7 +32,7 @@ class ProfileVC: UITableViewController {
                 
                 //Get specific document from current user
                 let docRef = Firestore.firestore()
-                    .collection("users")
+                    .collection("Profiles")
                     .document(userId)
                 
                 // Get data
@@ -74,7 +74,7 @@ class ProfileVC: UITableViewController {
         case 0:
             return 1
         case 1:
-            return 6
+            return 7
             
         default:
             print("default")
@@ -184,7 +184,7 @@ class ProfileVC: UITableViewController {
                 return cell
             case 1:
                 let cell = UITableViewCell()
-                cell.textLabel?.text = NSLocalizedString("Favoret Places", comment: "")
+                cell.textLabel?.text = NSLocalizedString("Favorite Places", comment: "")
                 
                 cell.backgroundColor = UIColor.init(named: "WhiteColor")!
                 cell.contentView.backgroundColor = UIColor.init(named: "WhiteColor")!
@@ -220,15 +220,20 @@ class ProfileVC: UITableViewController {
             case 5:
                 
                 let cell = UITableViewCell()
-                cell.textLabel?.text = NSLocalizedString("Go To Almosafer Application", comment: "")
+                cell.textLabel?.text = NSLocalizedString(" Travel Suggestion ", comment: "")
                 
                 cell.backgroundColor = UIColor.init(named: "WhiteColor")!
                 cell.contentView.backgroundColor = UIColor.init(named: "WhiteColor")!
                 return cell
                 
                 
-         
+            case 6:
+                let cell = UITableViewCell()
+                cell.textLabel?.text = NSLocalizedString("weather", comment: "")
                 
+                cell.backgroundColor = UIColor.init(named: "WhiteColor")!
+                cell.contentView.backgroundColor = UIColor.init(named: "WhiteColor")!
+                return cell
                 
             default:
                 print("default")
@@ -364,7 +369,7 @@ class ProfileVC: UITableViewController {
                 
                 
             case 4:
-                let phoneNumber =  "+966555960332" // you need to change this number
+                let phoneNumber =  "+966552003656" // you need to change this number
                 let appURL = URL(string: "https://wa.me/\(phoneNumber)")!
                 if UIApplication.shared.canOpenURL(appURL) {
                     if #available(iOS 10.0, *) {
@@ -377,15 +382,18 @@ class ProfileVC: UITableViewController {
             case 5:
                 
                 
-                let appURL = "https://apps.apple.com/sa/app/almosafer/id928866584"
-                       
-                    guard let url = URL(string: appURL) else { return }
-                    let svc = SFSafariViewController(url: url)
-                    present(svc, animated: true, completion: nil)
+               
+                let svc = TravelApplicationSuggestionsVC()
+                self.navigationController?.pushViewController(svc, animated: true)
                 
        
                 
-          
+            case 6:
+                
+                let svc = ViewController()
+                self.navigationController?.pushViewController(svc, animated: true)
+                
+                
             
         default:
             print("default")

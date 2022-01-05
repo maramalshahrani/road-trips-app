@@ -40,10 +40,10 @@ class Favorite: UIViewController  {
         layoutQustom.itemRenderDirection = .leftToRight
         layoutQustom.columnCount = 2
         
-        let collectionV = UICollectionView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height), collectionViewLayout: layoutQustom)
+       let collectionV = UICollectionView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height), collectionViewLayout: layoutQustom)
         
         
-        //        let collectionV = UICollectionView(frame: .zero, collectionViewLayout: layout)
+//        let collectionV = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionV.register(CityCell.self,forCellWithReuseIdentifier: CityCell.ID)
         collectionV.translatesAutoresizingMaskIntoConstraints = false
         collectionV.delegate = self
@@ -56,7 +56,7 @@ class Favorite: UIViewController  {
         super.viewDidLoad()
         configureCollectionView()
         self.title = "My choices"
-        view.backgroundColor = .systemGray
+        view.backgroundColor = UIColor.backgroundColor
         collectionView.backgroundColor = .systemGray6
         setupSearchBar()
         getData()
@@ -94,14 +94,33 @@ class Favorite: UIViewController  {
                                     let lang = value?["lang"] as? String ?? ""
                                     let title_ar = value?["title_ar"] as? String ?? ""
                                     let desc_ar = value?["desc_ar"] as? String ?? ""
-                                    self.allVaction.append(Vaction.init(id: id, image: image, title: title, desc: desc, lat: lat, lang: lang , title_ar: title_ar , desc_ar: desc_ar))
+                                    let activeCovid = value?["activeCovid"] as? String ?? ""
+                                    let rate = value?["rate"] as? String ?? ""
+                                    let rateCount = value?["rateCount"] as? String ?? ""
+
+                                    self.allVaction.append(Vaction.init(id: id, image: image, title: title, desc: desc, lat: lat, lang: lang , activeCovid: activeCovid, rateCount: rateCount , rate: rate, title_ar: title_ar , desc_ar: desc_ar))
+                                    
+                                   
+                                    
                                 }
                                 self.collectionView.reloadData()
                                 
                             })
+                            
+                            
+                            
+                            
                         }
+                        
                     }
+                    
                 }
+                
+                
+                
+                
+                
+                
             }else{
                 let alert = UIAlertController(title: "Login needed", message: "This feature requires login, please login to your account.", preferredStyle: .alert)
                 
@@ -120,7 +139,7 @@ class Favorite: UIViewController  {
     }
     
     private func configureCollectionView(){
-        
+       
         collectionView.autoresizingMask     = [.flexibleWidth, .flexibleHeight]
         collectionView.delegate             = self
         collectionView.dataSource           = self
@@ -128,6 +147,8 @@ class Favorite: UIViewController  {
         collectionView.register(CityCell.self, forCellWithReuseIdentifier: CityCell.ID)
         view.addSubview(collectionView)
     }
+    
+    
 }
 private func Layout() -> UICollectionViewCompositionalLayout{
     
@@ -137,8 +158,12 @@ private func Layout() -> UICollectionViewCompositionalLayout{
     
     let group = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(
         widthDimension: .fractionalWidth(1),
-        heightDimension: .estimated(300)),subitems: [item])
+        heightDimension: .estimated(300)),
+                                                 subitems: [item])
+    
     let section = NSCollectionLayoutSection(group: group)
+    
+    
     section.contentInsets.top = 25
     return UICollectionViewCompositionalLayout(section: section)
     
@@ -157,6 +182,7 @@ extension Favorite: UICollectionViewDelegate , UICollectionViewDataSource , CHTC
             return allVaction.count
             
         }
+        
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(
@@ -191,6 +217,7 @@ extension Favorite: UICollectionViewDelegate , UICollectionViewDataSource , CHTC
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
 }
 extension Favorite: UISearchResultsUpdating, UISearchBarDelegate {
     
@@ -205,6 +232,7 @@ extension Favorite: UISearchResultsUpdating, UISearchBarDelegate {
             findResultsBasedOnSearch(with: userEnteredSearchText)
         }
     }
+    
     private func findResultsBasedOnSearch(with text: String)  {
         filterVaction.removeAll()
         if !text.isEmpty {
@@ -214,4 +242,5 @@ extension Favorite: UISearchResultsUpdating, UISearchBarDelegate {
             collectionView.reloadData()
         }
     }
+    
 }

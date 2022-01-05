@@ -6,13 +6,16 @@ target 'RoadTrips' do
   use_frameworks!
 
   # Pods for RoadTrips 
-  pod 'Firebase/Auth'
- 	pod 'Firebase/Firestore'
- 	pod 'Firebase/Storage'
- 	pod 'Firebase/Analytics'
+ pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Analytics'
   pod 'Firebase/Database'
   pod 'Firebase'
   pod 'SDWebImage'
   pod 'CHTCollectionViewWaterfallLayout/Swift'
   pod 'FSPagerView'
-       end
+  pod 'Cosmos'
+  pod 'IQKeyboardManagerSwift'
+  pod 'ZLSwipeableViewSwift'
+end

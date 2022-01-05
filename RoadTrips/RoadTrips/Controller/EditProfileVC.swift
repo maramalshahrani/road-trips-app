@@ -140,7 +140,7 @@ class EditProfileVC: UIViewController {
                 
                 //Get specific document from current user
                 let docRef = Firestore.firestore()
-                    .collection("users")
+                    .collection("Profiles")
                     .document(userId)
                 
                 // Get data
@@ -228,7 +228,7 @@ class EditProfileVC: UIViewController {
         
         //Get specific document from current user
         Firestore.firestore()
-            .collection("users")
+            .collection("Profiles")
             .document(self.curentUser.id).setData([
                 "name": self.txtUserName.text ?? "",
                 "phoneNumber": self.txtPhone.text ?? ""
@@ -277,7 +277,7 @@ extension EditProfileVC: UINavigationControllerDelegate, UIImagePickerController
                 
                 //Get specific document from current user
                 Firestore.firestore()
-                    .collection("users")
+                    .collection("Profiles")
                     .document(self.curentUser.id).setData([
                         "avatar": imgUrl ?? "",
                     ], merge: true) { err in

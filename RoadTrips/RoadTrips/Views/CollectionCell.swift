@@ -56,7 +56,6 @@ class CityCell: UICollectionViewCell {
         tripTitle.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             
-            
             tripTitle.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: contentView.frame.height - 10),
             tripTitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 5),
             tripTitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5)

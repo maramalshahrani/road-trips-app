@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WeatherVC: UIViewController {
+class ViewController: UIViewController {
     
     var manager = Manager()
     
@@ -115,6 +115,7 @@ class WeatherVC: UIViewController {
     
     private func setupWeatherViews() {
         
+        
         cityLabel.textColor = UIColor.init(named: "WhiteColor")!
         cityLabel.font      = UIFont.systemFont(ofSize: 18)
         cityLabel.text      = "Enter A city Below"
@@ -154,7 +155,7 @@ class WeatherVC: UIViewController {
     }
 }
 
-extension WeatherVC: ManagerDelegate {
+extension ViewController: ManagerDelegate {
     
     func didUpdateWeather(_ weatherManager: Manager, weather: Model) {
         DispatchQueue.main.async {
