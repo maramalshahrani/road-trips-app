@@ -7,6 +7,7 @@
   
 */
 
+
 "welecome" = "welecome";
 "Login" = "Login" ;
 "Password" = "Password" ;
@@ -34,7 +35,7 @@
 "Applicaiton mode" = "Applicaiton mode" ;
 "Favoret Places" = "Favoret Places" ;
 "Contact a travel representative" = "Contact a travel representative" ;
-"Go To Almosafer Application" = "Go To Almosafer Application" ;
+"Travel Suggestions" = "Travel Suggestions" ;
 "Travel Explorers🔎" = "Travel Explorers🔎" ;
 "Cities" = "Cities" ;
 "Welcome" = "Welcome" ;
@@ -42,4 +43,9 @@
 "Datails" = "Datails" ;
 "Search for a city" = "Search for a city" ;
 "Countries Information" = "Countries Information";
-
+"Total confirmed cases" = "Total confirmed cases";
+"add Rate" = "add Rate";
+"Submit" = "Submit";
+"Thank You For Rate" = "Thank You For Rate";
+"Write comment here" = "Write comment here";
+"Vedios" = "Vedios";

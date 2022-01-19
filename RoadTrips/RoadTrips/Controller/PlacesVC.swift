@@ -20,13 +20,13 @@ class PlacesVC: UIViewController {
     
     public func setupSearchBar() {
         
-        search.loadViewIfNeeded()
-        search.searchResultsUpdater = self
+        search.loadViewIfNeeded()// Loads the view controller’s view if it has not yet been loaded.
+        search.searchResultsUpdater = self // object responsible for updating the contents of the search results controller.
         search.obscuresBackgroundDuringPresentation = false
         search.searchBar.returnKeyType = .done
         search.searchBar.sizeToFit()
         search.searchBar.placeholder = NSLocalizedString("Search for a city", comment: "")
-        search.hidesNavigationBarDuringPresentation = false
+        search.hidesNavigationBarDuringPresentation = false //A Boolean indicating whether the navigation bar should be hidden when searching.
         definesPresentationContext = true
         
         navigationItem.searchController = search

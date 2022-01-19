@@ -16,6 +16,7 @@ enum Language: String {
     case english = "en"
     case arabic = "ar"
     
+    // Siwtch languege (right-lift)
     var semantic: UISemanticContentAttribute {
         switch self {
         case .english:
@@ -35,7 +36,7 @@ enum Language: String {
             return false
         }
     }
-    
+    //userdefault and key
     static var current: Language {
         get {
             if let languageCode = UserDefaults.standard.string(forKey: appleLanguagesKey),
@@ -43,7 +44,7 @@ enum Language: String {
                 return language
                 
             } else {
-                
+                // arange language
                 let preferredLanguage = NSLocale.preferredLanguages[0]
                 let index = preferredLanguage.index(preferredLanguage.startIndex, offsetBy: 2)
                 

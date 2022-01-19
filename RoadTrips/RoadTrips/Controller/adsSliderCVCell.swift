@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SDWebImage
 import FSPagerView
-//this
+
 class adsSliderCVCell: UICollectionReusableView , FSPagerViewDataSource{
     static let identifier = "adsSliderCVCell"
 
@@ -42,7 +42,7 @@ class adsSliderCVCell: UICollectionReusableView , FSPagerViewDataSource{
             let pagerView = FSPagerView(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 400))
             
             pagerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
-            pagerView.automaticSlidingInterval = 1.5
+            pagerView.automaticSlidingInterval = 3.0
             pagerView.isInfinite = true
             return pagerView
             
@@ -100,3 +100,4 @@ class adsSliderCVCell: UICollectionReusableView , FSPagerViewDataSource{
             return cell
         }
     }
+

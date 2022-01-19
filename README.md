@@ -16,6 +16,8 @@ As a user, I want to see reviews about the city so that I can gather more inform
 - Explorers Travel :
 As a user I can see the famous explorers travel so that I can scan their
  Snap barcode.
+ - video
+ As a user i want see the video of best places to other pepole so that make me choose the best places.
  - Settings :
  As a user, I want to see my data so that I can edit and save it.
 As a user, I want to change the appearance of the application to allow the use of dark mode and light mode.
@@ -35,6 +37,7 @@ Logout: As a user, I can log out of Application so that no one  can use my data.
 | Datails page |  user only |show us pictures of the city ,describtion.|
 |Travel Explorers    |  user only | Show us travel Explorers , navigate us to Snap code page.|
 | Snap code page      | user only   | View user the snap code of Travel Explorers .| 
+| Video page | user only | show us the video of places.
 | Weather page     | user only   | Searches for the current weather of the city.|
 | Map page     | user only   | Searches for the city and its best attractions.|
 | SettingPage      |  user only | Change the app language , change between dark or light mode,Countries information, Fovarate places,Contact a travel representative .|
@@ -47,6 +50,7 @@ Logout: As a user, I can log out of Application so that no one  can use my data.
 * Datails page
 * Travel Explorer
 *  Snap code page
+* video page
 *  Weather page
 *  Map page
 *  SettingPage 

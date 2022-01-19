@@ -19,7 +19,10 @@ class TabBarVC: UITabBarController {
             
             barItem(tabBarTitle:NSLocalizedString("Explorers", comment: "") , tabBarImage: UIImage(systemName: "person.3.fill")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: TouristExplorers()),
             
-            barItem(tabBarTitle: NSLocalizedString("verdios", comment: "") , tabBarImage: UIImage(systemName: "cloud.fill")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: VideoVC()),
+            
+            
+            
+            barItem(tabBarTitle: NSLocalizedString("Vedios", comment: "") , tabBarImage: UIImage(systemName: "video.fill")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: HomeViewController()),
             
             barItem(tabBarTitle:NSLocalizedString("maps", comment: "") , tabBarImage: UIImage(systemName: "mappin.and.ellipse")!.withTintColor(UIColor(#colorLiteral(red: 0.5328342915, green: 0.7127938271, blue: 0.7465521097, alpha: 1)), renderingMode: .alwaysOriginal), viewController: Maps()),
             
@@ -37,12 +40,20 @@ class TabBarVC: UITabBarController {
     }
     
     private func barItem(tabBarTitle: String, tabBarImage: UIImage, viewController: UIViewController) -> UINavigationController {
-        let navCont = UINavigationController(rootViewController: viewController)
-        navCont.tabBarItem.title = tabBarTitle
-        navCont.tabBarItem.image = tabBarImage
-        navCont.navigationBar.prefersLargeTitles = true
-        return navCont
+        if tabBarTitle == NSLocalizedString("Vedios", comment: "")  {
+            
+            let navCont = BaseNavigationController(rootViewController: viewController)
+            navCont.tabBarItem.title = tabBarTitle
+            navCont.tabBarItem.image = tabBarImage
+            navCont.navigationBar.prefersLargeTitles = true
+            return navCont
+        }else{
+            let navCont = UINavigationController(rootViewController: viewController)
+            navCont.tabBarItem.title = tabBarTitle
+            navCont.tabBarItem.image = tabBarImage
+            navCont.navigationBar.prefersLargeTitles = true
+            return navCont
+        }
     }
     
 }
-
