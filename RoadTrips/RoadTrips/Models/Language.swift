@@ -7,7 +7,7 @@
 
 import UIKit
 
-// this
+
 private let appleLanguagesKey = "AppleLanguages"
 
 enum Language: String {
@@ -16,7 +16,6 @@ enum Language: String {
     case english = "en"
     case arabic = "ar"
     
-    // Siwtch languege (right-lift)
     var semantic: UISemanticContentAttribute {
         switch self {
         case .english:
@@ -36,15 +35,15 @@ enum Language: String {
             return false
         }
     }
-    //userdefault and key
+    
     static var current: Language {
         get {
             if let languageCode = UserDefaults.standard.string(forKey: appleLanguagesKey),
-               let language = Language(rawValue: languageCode) {
+                let language = Language(rawValue: languageCode) {
                 return language
                 
             } else {
-                // arange language
+                
                 let preferredLanguage = NSLocale.preferredLanguages[0]
                 let index = preferredLanguage.index(preferredLanguage.startIndex, offsetBy: 2)
                 
@@ -58,9 +57,9 @@ enum Language: String {
                     return Language.english
                     
                 }
-                
+                    
             }
-            
+
         }
         
         set {
@@ -69,7 +68,7 @@ enum Language: String {
             if newValue == .default {
                 UserDefaults.standard.removeObject(forKey: appleLanguagesKey)
                 UserDefaults.standard.synchronize()
-                
+
             } else {
                 // change language in the app
                 // the language will be changed after restart
@@ -83,11 +82,11 @@ enum Language: String {
             if newValue == .arabic {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 UIImageView.appearance().semanticContentAttribute = .forceRightToLeft
-                
+
             }else if newValue == .english{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
                 UIImageView.appearance().semanticContentAttribute = .forceLeftToRight
-                
+
             }
             
             //initialize the app from scratch
@@ -95,7 +94,7 @@ enum Language: String {
             //so it seems like the is restarted
         }
     }
-    
+
 }
 
 extension String {
@@ -116,5 +115,3 @@ extension String {
         return self.trimmingCharacters(in: .whitespaces)
     }
 }
-
-

@@ -67,7 +67,7 @@
 		5181B3BD2780CA8500157C24 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5181B3BC2780CA8500157C24 /* CountryModel.swift */; };
 		51928CEA277C44160091476D /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51928CE9277C44160091476D /* MapVC.swift */; };
 		51928CEC277C4EAB0091476D /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51928CEB277C4EAB0091476D /* LocationSearchTable.swift */; };
-		51928CEF277C50050091476D /* Localizble.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51928CF1277C50050091476D /* Localizble.strings */; };
+		51928CEF277C50050091476D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51928CF1277C50050091476D /* Localizable.strings */; };
 		51F807D8277889700061FC74 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F807D7277889700061FC74 /* Language.swift */; };
 		8539230BCCA141B931424F6C /* Pods_RoadTrips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE722251F99E746338DE04 /* Pods_RoadTrips.framework */; };
 /* End PBXBuildFile section */
@@ -136,8 +136,8 @@
 		5181B3BC2780CA8500157C24 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		51928CE9277C44160091476D /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		51928CEB277C4EAB0091476D /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
-		51928CF0277C50050091476D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizble.strings; sourceTree = "<group>"; };
-		51928CF2277C50070091476D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizble.strings; sourceTree = "<group>"; };
+		51928CF0277C50050091476D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		51928CF2277C50070091476D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		51F807D7277889700061FC74 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		631229DC9DE7E2BA0531B11F /* Pods-RoadTrips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadTrips.release.xcconfig"; path = "Target Support Files/Pods-RoadTrips/Pods-RoadTrips.release.xcconfig"; sourceTree = "<group>"; };
 		9CAE722251F99E746338DE04 /* Pods_RoadTrips.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadTrips.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -340,7 +340,7 @@
 				513664A2274E1D1400424046 /* Assets.xcassets */,
 				513664A4274E1D1400424046 /* LaunchScreen.storyboard */,
 				513664A7274E1D1400424046 /* Info.plist */,
-				51928CF1277C50050091476D /* Localizble.strings */,
+				51928CF1277C50050091476D /* Localizable.strings */,
 			);
 			path = RoadTrips;
 			sourceTree = "<group>";
@@ -464,7 +464,7 @@
 				513664A3274E1D1400424046 /* Assets.xcassets in Resources */,
 				5106197C27948C02007FC79F /* LoadingAnimation.json in Resources */,
 				513664AE274E1EBF00424046 /* GoogleService-Info.plist in Resources */,
-				51928CEF277C50050091476D /* Localizble.strings in Resources */,
+				51928CEF277C50050091476D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,13 +587,13 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		51928CF1277C50050091476D /* Localizble.strings */ = {
+		51928CF1277C50050091476D /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				51928CF0277C50050091476D /* en */,
 				51928CF2277C50070091476D /* ar */,
 			);
-			name = Localizble.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

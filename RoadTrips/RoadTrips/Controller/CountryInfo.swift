@@ -18,7 +18,8 @@ class CountryInfo: UIViewController {
     var nameRegionLbl = UILabel()
     var numpopulationLbl = UILabel()
     var flagLbl = UILabel()
-
+    var imaged = UIImageView()
+    
     
     var nameCountry: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -56,14 +57,25 @@ class CountryInfo: UIViewController {
         view.backgroundColor = .secondarySystemBackground
         searchTF.delegate = self
         countryAPI.delegate = self
-
+        
+        imaged.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(imaged)
+        imaged.layer.cornerRadius = 40
+        imaged.image = UIImage(named: "world")
+        NSLayoutConstraint.activate([
+            imaged.topAnchor.constraint(equalTo: view.topAnchor, constant: 90),
+            imaged.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40),
+            imaged.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40),
+            imaged.heightAnchor.constraint(equalToConstant: 220)
+        
+        ])
         searchTF.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(searchTF)
         searchTF.placeholder = "Type Country"
         searchTF.textAlignment = .center
         searchTF.returnKeyType = .search
         NSLayoutConstraint.activate([
-            searchTF.topAnchor.constraint(equalTo: view.topAnchor, constant: 200),
+            searchTF.topAnchor.constraint(equalTo: view.topAnchor, constant: 350),
             searchTF.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -50),
             searchTF.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 50)
         ])

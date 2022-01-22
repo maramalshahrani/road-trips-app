@@ -68,7 +68,7 @@ class DetailVC: UIViewController , FSPagerViewDataSource, CWRateKitViewControlle
         let pagerView = FSPagerView(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 400))
         
         pagerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
-        pagerView.automaticSlidingInterval = 1.8
+        pagerView.automaticSlidingInterval = 3.0
         pagerView.isInfinite = true
         return pagerView
         

@@ -56,7 +56,7 @@ class ProfileVC: UITableViewController {
                 }
             }else{
                 self.tableView.reloadData()
-                
+
             }
         }
     }
@@ -145,11 +145,11 @@ class ProfileVC: UITableViewController {
                 }
                 
                 cell.logInOut.setTitle(NSLocalizedString("Log Out", comment: ""), for: .normal)
-                
+
                 cell.backgroundColor = UIColor.init(named: "WhiteColor")!
                 cell.contentView.backgroundColor = UIColor.init(named: "WhiteColor")!
                 cell.logInOut.backgroundColor = UIColor(#colorLiteral(red: 0.4353726804, green: 0.5419737697, blue: 0.5150486827, alpha: 1))
-                
+
                 
                 cell.logInOut.addTarget(self, action: #selector(logoutAction(_:)), for: .touchUpInside)
                 
@@ -158,12 +158,12 @@ class ProfileVC: UITableViewController {
                 cell.editPrrofile.isHidden = true
                 
                 cell.userNameLbl.text = "Guest"
-                
+             
                 cell.backgroundColor = UIColor.init(named: "WhiteColor")!
                 cell.contentView.backgroundColor = UIColor.init(named: "WhiteColor")!
                 cell.logInOut.setTitle("Log In", for: .normal)
                 cell.logInOut.backgroundColor = UIColor(#colorLiteral(red: 0.5395174623, green: 0.6461284757, blue: 0.6582974195, alpha: 1))
-                
+
                 cell.logInOut.addTarget(self, action: #selector(logInAction(_:)), for: .touchUpInside)
                 
             }
@@ -185,7 +185,7 @@ class ProfileVC: UITableViewController {
                 return cell
             case 1:
                 let cell = UITableViewCell()
-                cell.textLabel?.text = NSLocalizedString("Favoret Places", comment: "")
+                cell.textLabel?.text = NSLocalizedString("Favorite Places", comment: "")
                 
                 cell.backgroundColor = UIColor.init(named: "WhiteColor")!
                 cell.contentView.backgroundColor = UIColor.init(named: "WhiteColor")!
@@ -208,7 +208,7 @@ class ProfileVC: UITableViewController {
                 return cell
                 
                 
-                
+         
                 
             case 4:
                 let cell = UITableViewCell()
@@ -221,7 +221,7 @@ class ProfileVC: UITableViewController {
             case 5:
                 
                 let cell = UITableViewCell()
-                cell.textLabel?.text = NSLocalizedString("Travel Suggestion", comment: "")
+                cell.textLabel?.text = NSLocalizedString("Suggested Applications", comment: "")
                 
                 cell.backgroundColor = UIColor.init(named: "WhiteColor")!
                 cell.contentView.backgroundColor = UIColor.init(named: "WhiteColor")!
@@ -337,7 +337,7 @@ class ProfileVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section {
             
-            
+   
         case 1:
             switch indexPath.row {
             case 0:
@@ -345,7 +345,7 @@ class ProfileVC: UITableViewController {
                 
             case 1:
                 navigationController?.pushViewController(Favorite(), animated: true)
-                
+           
             case 2:
                 changeLanguage()
                 
@@ -364,9 +364,9 @@ class ProfileVC: UITableViewController {
                     }
                 }
                 
-                
-                
-                
+          
+
+           
                 
                 
             case 4:
@@ -383,11 +383,11 @@ class ProfileVC: UITableViewController {
             case 5:
                 
                 
-                
+               
                 let svc = TravelApplicationSuggestionsVC()
                 self.navigationController?.pushViewController(svc, animated: true)
                 
-                
+       
                 
             case 6:
                 
@@ -395,11 +395,11 @@ class ProfileVC: UITableViewController {
                 self.navigationController?.pushViewController(svc, animated: true)
                 
                 
-                
-            default:
-                print("default")
-            }
             
+        default:
+            print("default")
+        }
+  
         default:
             print("default")
         }

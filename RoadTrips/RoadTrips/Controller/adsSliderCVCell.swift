@@ -100,4 +100,3 @@ class adsSliderCVCell: UICollectionReusableView , FSPagerViewDataSource{
             return cell
         }
     }
-
