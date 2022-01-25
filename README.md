@@ -73,7 +73,7 @@ struct User: Codable {
 }
 
 ## Slides
-
+https://docs.google.com/presentation/d/1oT5EwCKWkKwgr0l-ckpsjErwE09Fx998EaddopYPnjw/edit#slide=id.g10f98e51817_1_9
 
 
 

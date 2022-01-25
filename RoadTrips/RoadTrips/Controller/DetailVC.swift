@@ -1,9 +1,10 @@
 //
-//  DetailVC.swift
+//  DetailsVC.swift
 //  RoadTrips
 //
-//  Created by Maram Al shahrani on 20/05/1443 AH.
+//  Created by Maram Al shahrani on 20/04/1443 AH.
 //
+
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase

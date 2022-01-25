@@ -94,10 +94,6 @@ class Maps: UIViewController, MKMapViewDelegate {
                             
                         }
                     }
-                    //
-                    
-                    
-                    
                     
                 }
                 var i = 0
